@@ -69,6 +69,7 @@
     > - pacman -S git
     > - pacman -S dolphin
     > - pacman -S fish
+    > - pacman -S pulseaudio
     > - visudo -> below %wheel ALL=(ALL) ALL add: <br>
     > %approvedsudoers ALL=(ALL) ALL
     > - useradd -m -G approvedsudoers -s /usr/bin/fish cortana
@@ -86,9 +87,9 @@
     > - cp /boot/EFI/arch/grubx64.efi /boot/EFI/boot/bootx64.efi
 15. Set root password
     > - passwd
-# System
+# System (if any widget is missing, install)
 1. Install plasma and sddm
-    > - sudo pacman -S plasma
+    > - sudo pacman -S plasma discover packagekit-qt5
     > - sudo pacman -S sddm
     > - sudo systemctl enable sddm
     > - sudo reboot
@@ -132,7 +133,12 @@
     > - cd code-git
     > - makepkg -Acs
     > - sudo pacman -U code*.tar.xz
+    > - sudo pacman -S linux-headers
+    > - sudo modprobe vboxdrv
+    > - sudo /sbin/rcvboxdrv setup
     > - sudo pacman -S virtualbox
+    > - sudo pacman -S nomacs
+    > - sudo pacman -S krita
 5. Start menu
     > - Replace current task manager with icons only task manager
     > - sudo pacman -S make cmake extra-cmake-modules
@@ -142,6 +148,8 @@
     > - Right click clock -> Configure Digital Clock -> Check Show Date
     > - Right click menu icon -> Application Launcher Settings -> Select Arch Icon
     > - Add Minimize Windows next to System Tray
+    > - Add new vertical panel and move it to secondary screen alligin to the right
+    > - Add icons only task manager and add following widgets: thermal monitor, turn off, clock
 6. Install other applications
     > - sudo pacman -S spectacle
     > - sudo pacman -S kdeconnect
