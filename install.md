@@ -94,10 +94,10 @@
 
 ### Set locale
 1. Generate locale
-    > nano /etc/locale.gen
-    > uncomment en_US.UTF-8 UTF-8
-    > locale-gen
-    > echo "LANG=en_US.UTF-8 >> /etc/locale.conf
+    > nano /etc/locale.gen  
+    > uncomment en_US.UTF-8 UTF-8  
+    > locale-gen  
+    > echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 2. Set vconsole layout
     > echo "KEYMAP=sv-latin1" >> /etc/vconsole.conf
 
@@ -144,13 +144,13 @@
 
 ## Post reboot
 ### Configure firewall
-> sudo ufw default deny
-> sudo ufw allow from 192.168.1.0/24(your ip-net)
-> sudo ufw enable
+> sudo ufw default deny  
+> sudo ufw allow from 192.168.1.0/24(your ip-net)  
+> sudo ufw enable  
 > sudo ufw reload
 ### Intall virtualbox
-> sudo pacman -S vboxdrv
-> sudo modprobe vboxdrv
+> sudo pacman -S vboxdrv  
+> sudo modprobe vboxdrv  
 > sudo /sbin/rcvboxdrv setup
 
 # Install Plasma
@@ -158,24 +158,24 @@
 1. Install packages
     > sudo pacman -S pulseaudio tilix dolphin plasma discover packagekit-qt5 sddm noto-fonts ttf-dejavu ttf-liberation firefox chromium
 2. Enable sddm
-    > sudo systemctl enable sddm
+    > sudo systemctl enable sddm  
     > sudo reboot
 3.  Create home folders
     > mkdir ~./Downloads Pictures Coding Documents
 ### Install my apps
 1. p7zip
-    > sudo pacman -S p7zip wxgtk2 nasm python yasm kservice
-    > cd ~/.Downloads
-    > git clone https://aur.archlinux.org/p7zip-gui.git
-    > cd p7zip-gui
-    > makepkg -Acs
+    > sudo pacman -S p7zip wxgtk2 nasm python yasm kservice  
+    > cd ~/.Downloads  
+    > git clone https://aur.archlinux.org/p7zip-gui.git  
+    > cd p7zip-gui  
+    > makepkg -Acs  
     > sudo pacman -U p7zip*.tar.xz
 2. PowerShell
-    > sudo pacman -S icu openssl-1.0 dotnet-sdk
-    > git clone https://aur.archlinux.org/powershell.git
-    > cd powershell
-    > makepkg -Acs
-    > sudo pacman -U powershell*.tar.xz
+    > sudo pacman -S icu openssl-1.0 dotnet-sdk  
+    > git clone https://aur.archlinux.org/powershell.git  
+    > cd powershell  
+    > makepkg -Acs  
+    > sudo pacman -U powershell*.tar.xz  
 3. Install VSCode from Discover
 4. Install image applications
     > sudo pacman -S nomacs krita spectacle
