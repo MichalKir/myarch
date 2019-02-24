@@ -94,10 +94,10 @@
 
 ### Set locale
 1. Generate locale
-    > nano /etc/locale.gen  
-    > uncomment en_US.UTF-8 UTF-8  
-    > locale-gen  
-    > echo "LANG=en_US.UTF-8" >> /etc/locale.conf
+    > * nano /etc/locale.gen  
+    > * uncomment en_US.UTF-8 UTF-8  
+    > * locale-gen  
+    > * echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 2. Set vconsole layout
     > echo "KEYMAP=sv-latin1" >> /etc/vconsole.conf
 
@@ -143,6 +143,8 @@
 > reboot
 
 ## Post reboot
+### Export locale
+> export LANG=en_US.utf8
 ### Configure firewall
 > sudo ufw default deny  
 > sudo ufw allow from 192.168.1.0/24(your ip-net)  
