@@ -144,6 +144,9 @@
 > reboot
 
 ## Post reboot
+### Enable multilib
+> sudo vi /etc/pacman.conf  
+> uncomment [multilib] and Include
 ### Configure firewall
 > sudo ufw default deny  
 > sudo ufw allow from 192.168.1.0/24(your ip-net)  
