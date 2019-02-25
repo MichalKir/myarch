@@ -131,10 +131,10 @@
 
 ### Configure users
 1. Allow wheel group to execute sudo command
-    > visudo
+    > visudo  
     > uncomment %wheel ALL=(ALL) AL
 2. Create new user
-    > useradd -m -G wheel -s /bin/bash cortana
+    > useradd -m -G wheel -s /bin/bash cortana  
     > passwd cortana
 2. Set root password
     > passwd
@@ -157,7 +157,7 @@
 # Install Plasma
 ### Install packages
 1. Install packages
-    > sudo pacman -S pulseaudio tilix dolphin plasma discover packagekit-qt5 sddm noto-fonts ttf-dejavu ttf-liberation firefox chromium
+    > sudo pacman -S code pulseaudio tilix dolphin plasma discover packagekit-qt5 sddm noto-fonts ttf-dejavu ttf-liberation firefox chromium
 2. Enable sddm
     > sudo systemctl enable sddm  
     > sudo reboot
@@ -177,8 +177,7 @@
     > cd powershell  
     > makepkg -Acs  
     > sudo pacman -U powershell*.tar.xz  
-3. Install VSCode from Discover
-4. Install image applications
+3. Install image applications
     > sudo pacman -S nomacs krita spectacle
 
 ### Configure Plasma
