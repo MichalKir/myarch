@@ -161,7 +161,7 @@
 # Install Plasma
 ### Install packages
 1. Install packages
-    > sudo pacman -S code pulseaudio tilix dolphin plasma discover packagekit-qt5 sddm noto-fonts ttf-dejavu ttf-liberation firefox chromium
+    > sudo pacman -S code pulseaudio tilix dolphin plasma discover packagekit-qt5 sddm noto-fonts ttf-dejavu ttf-liberation firefox chromium neofetch
 2. Enable sddm
     > sudo systemctl enable sddm  
     > sudo reboot
