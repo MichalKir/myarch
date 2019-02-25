@@ -151,7 +151,7 @@
 > sudo ufw enable  
 > sudo ufw reload
 ### Intall virtualbox
-> sudo pacman -S vboxdrv  
+> sudo pacman -S virtualbox  
 > sudo modprobe vboxdrv  
 > sudo /sbin/rcvboxdrv setup
 
