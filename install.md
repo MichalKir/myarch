@@ -166,7 +166,7 @@
     > sudo systemctl enable sddm  
     > sudo reboot
 3.  Create home folders
-    > mkdir ~./Downloads Pictures Coding Documents
+    > mkdir ~/Downloads Pictures Coding Documents
 ### Install my apps
 1. p7zip
     > sudo pacman -S p7zip wxgtk2 nasm python yasm kservice  
