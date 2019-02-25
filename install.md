@@ -44,7 +44,7 @@
 1. Format boot
     > mkfs.fat -F32 /dev/sda1
 2. Format swap
-    > mkswap /dev/sda2
+    > mkswap /dev/sda2  
     > swapon /dev/sda2
 3. Format /
     > mkfs.ext4 /dev/sda3
