@@ -146,7 +146,7 @@
 ## Post reboot
 ### Enable multilib
 > sudo vi /etc/pacman.conf  
-> uncomment [multilib] and Include
+> uncomment [multilib] and Include  
 > sudo pacman -Sy
 ### Configure firewall
 > sudo ufw default deny  
