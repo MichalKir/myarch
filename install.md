@@ -114,7 +114,7 @@
 ```
 
 ### Install core packages
-> pacman -S linux-headers grub efibootmgr networkmanager ufw base-devel vim git nvidia(if using nvidia gaming nvidia card)
+> pacman -S linux-headers grub efibootmgr networkmanager ufw base-devel vim git xorg-xinit nvidia(if using nvidia gaming nvidia card) xf86-video-fbdev (if using hyper-v)
 
 ### Enable network manager
 > systemctl enable NetworkManager
